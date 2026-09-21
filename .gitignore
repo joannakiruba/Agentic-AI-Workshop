@@ -1,24 +1,102 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
 # Virtual environments
 .venv/
 venv/
 env/
+ENV/
 
-# Python cache
-__pycache__/
-*.py[cod]
-*.pyo
+# =========================
+# Environment variables
+# =========================
+.env
+.env.*
+!.env.example
 
-# Build files
+# =========================
+# IDEs
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# Testing
+# =========================
+.pytest_cache/
+.coverage
+htmlcov/
+
+# =========================
+# Build / Packaging
+# =========================
 build/
 dist/
 *.egg-info/
 
+# =========================
 # Jupyter
+# =========================
 .ipynb_checkpoints/
 
-# Environment variables
-.env
-.env.*
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
 
+# =========================
 # Logs
+# =========================
 *.log
+
+# =========================
+# SQLite databases
+# =========================
+*.db
+*.sqlite
+*.sqlite3
+
+# =========================
+# Local data / temp files
+# =========================
+tmp/
+temp/
+*.tmp
+
+# =========================
+# Secrets
+# =========================
+secrets.json
+credentials.json
+service-account.json
+
+# =========================
+# Supabase local config
+# =========================
+.supabase/
+
+# =========================
+# MCP / AI generated files
+# =========================
+*.cache
+.cache/
+
+# Local databases used by demos/tests
+data/
+*.db
+
+# Python dotenv files
+.env
+
+# Generated test output
+coverage.xml
+
+# Temporary demo databases
+library-demo-*/
+absence-demo-*/
+placement-demo-*/

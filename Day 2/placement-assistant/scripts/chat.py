@@ -45,7 +45,7 @@ def main() -> None:
     p.add_argument("--thread", help="continue this thread id from --db")
     a = p.parse_args()
 
-    provider = default_mock() if a.mock else GeminiProvider(os.environ.get("GEMINI_MODEL", "gemini-2.5-flash"))
+    provider = default_mock() if a.mock else GeminiProvider(os.environ.get("GEMINI_MODEL", "gemini-3.6-flash"))
     tools = PlacementTools(InMemoryPlacementRepo(), OutboxNotifier())
 
     memory = thread_id = None

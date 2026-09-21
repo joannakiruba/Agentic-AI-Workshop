@@ -64,7 +64,7 @@ PROVIDERS: dict[str, dict] = {
         "label": "Google Gemini (free tier)",
         "base_url": "https://generativelanguage.googleapis.com/v1beta/openai/",
         "key_env": "GEMINI_API_KEY",
-        "main": "gemini-2.5-flash",
+        "main": "gemini-3.6-flash",
         "cheap": "gemini-2.5-flash-lite",
         "strict_schema": False,
         "free": True,

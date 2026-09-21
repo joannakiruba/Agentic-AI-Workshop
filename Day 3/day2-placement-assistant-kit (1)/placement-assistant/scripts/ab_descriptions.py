@@ -41,7 +41,7 @@ def main(trials: int, pause: float, dry_run: bool) -> None:
             print(json.dumps(decl.model_dump(mode="json", exclude_none=True), indent=2), "\n")
         return
 
-    model = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+    model = os.environ.get("GEMINI_MODEL", "gemini-3.6-flash")
     config = types.GenerateContentConfig(
         system_instruction=SYSTEM.format(student_id="22CS045"),
         tools=fns,
